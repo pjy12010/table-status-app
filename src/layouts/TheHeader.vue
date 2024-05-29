@@ -22,12 +22,13 @@ export default {
 <style scoped>
 @font-face {
   font-family: 'Bold';
-  src :url("C:\Users\Boss\workspace\table-status-app\public\fonts\GmarketSansTTFBold.ttf") ;
+  src :url("table-status-app\src\assets\GmarketSansTTFBold.ttf") ;
 }
 @font-face {
   font-family: 'Light';
-  src: url("C:\Users\Boss\workspace\table-status-app\public\fonts\GmarketSansTTFLight.ttf");
+  src: url("table-status-app\src\assets\GmarketSansTTFLight.ttf");
 }
+
 header {
   display: flex;
   justify-content: center;
