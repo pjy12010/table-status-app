@@ -66,6 +66,7 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom right, #c7d7fc 0%, #a0bfff 75%);
+  min-height: 200px;
 }
 
 h1 {
