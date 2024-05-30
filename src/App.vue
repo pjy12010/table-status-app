@@ -41,12 +41,12 @@ body {
 }
 
 .home-background {
-  background-image: url('@/assets/foot0.png');
+  background-image: url('@/assets/foot_blue.png');
   background-size: cover;
 }
 
 .userstatus-background {
-  background-image: url('@/assets/foot.png');
+  background-image: url('@/assets/foot_orange.png');
   background-size: cover;
 }
 </style>
