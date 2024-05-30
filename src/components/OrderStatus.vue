@@ -87,18 +87,17 @@ export default {
 <style scoped>
 @font-face {
   font-family: 'Bold';
-  src :url("table-status-app\src\assets\GmarketSansTTFBold.ttf") ;
+  src: url('@/assets/GmarketSansTTFBold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Light';
-  src: url("table-status-app\src\assets\GmarketSansTTFLight.ttf");
+  src: url('@/assets/GmarketSansTTFLight.ttf') format('truetype');
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 80vh; */
   min-height: 200px;
   background-color: #f9f9f9;
 }
@@ -131,9 +130,9 @@ main {
   color: #ff814b;
 }
 .middle1 {
-  display: flex; /* Use flex to align tables and middle2 side by side */
-  justify-content: center; /* Center align the flex items */
-  gap: 150px; /* Adjust the gap value as needed */
+  display: flex;
+  justify-content: center;
+  gap: 150px;
 }
 .info {
   margin: auto;
@@ -149,9 +148,9 @@ main {
 
 .tables {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-gap: 10px; /* Adjust the gap value as needed */
-  justify-content: center; /* Center align the grid */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
   margin-bottom: 20px;
 }
 

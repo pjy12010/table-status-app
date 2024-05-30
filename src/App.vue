@@ -41,16 +41,12 @@ body {
 }
 
 .home-background {
-  background-image: url('C:\Users\Boss\workspace\table-status-app\src\assets\foot0.png');
+  background-image: url('@/assets/foot0.png');
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* min-height: 100vh; */
 }
 
 .userstatus-background {
-  background-image: url('C:\Users\Boss\workspace\table-status-app\src\assets\foot.png');
+  background-image: url('@/assets/foot.png');
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* min-height: 100vh; */
 }
 </style>

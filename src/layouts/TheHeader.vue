@@ -4,10 +4,8 @@
       <img src="@/assets/sinabro.png" alt="Menu" class="logo-image" />
     </router-link>
     <nav>
-      <!-- <a href="#">좌석현황</a> -->
       <router-link to="/UserStatus" active-class="active">좌석현황</router-link>
       <router-link to="/OrderStatus" active-class="active">좌석안내시스템</router-link>
-      <!-- <a href="#">좌석안내시스템</a> -->
     </nav>
     <button class="login-btn">로그아웃</button>
   </header>
@@ -22,11 +20,11 @@ export default {
 <style scoped>
 @font-face {
   font-family: 'Bold';
-  src :url("table-status-app\src\assets\GmarketSansTTFBold.ttf") ;
+  src: url('@/assets/GmarketSansTTFBold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Light';
-  src: url("table-status-app\src\assets\GmarketSansTTFLight.ttf");
+  src: url('@/assets/GmarketSansTTFLight.ttf') format('truetype');
 }
 
 header {

@@ -51,12 +51,13 @@
 <style  scoped>
 @font-face {
   font-family: 'Bold';
-  src :url("table-status-app\src\assets\GmarketSansTTFBold.ttf") ;
+  src: url('@/assets/GmarketSansTTFBold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Light';
-  src: url("table-status-app\src\assets\GmarketSansTTFLight.ttf");
+  src: url('@/assets/GmarketSansTTFLight.ttf') format('truetype');
 }
+
 
 .seat-management {
   text-align: center;
