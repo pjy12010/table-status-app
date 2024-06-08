@@ -10,9 +10,10 @@
           <div v-for="table in tables" :key="table.id" class="table">
             <h3>Table    <span class="coco2">{{ table.id }}  </span>  :</h3>
             <br>
-            <span class="coco3">{{ table.uses }}</span>  번
+            <span class="coco3">{{ table.uses }}</span>  %
           </div>
         </div>
+        <img src="@/assets/arrow2.png" class="arrow2">
         <div class="middle2">
           <div class = "info">
             <h1>좌석 선호도</h1>
@@ -25,26 +26,30 @@
             최소 이용 테이블 : 
             &ensp;<span class="coco">{{ leasttable }}</span>&ensp;번 테이블
           </div>
-          <div class="info">
+          <!-- <div class="info">
             <h1>체류시간</h1>
             <br>
             <img src="@/assets/egg2.png" class="egg2">
             평균 고객 체류시간 : 
             &ensp;<span class="coco">{{ meantime }}</span>&ensp;분
-          </div>
+          </div> -->
         </div>
+      </div>
+      <div class="middle3">
+        <img src="@/assets/arrow.png" class="arrow">
+        <h4>일별 기준 시간까지의 각 테이블 누적 이용률</h4>
       </div>
       <div class = "bottom">
       <h2>시간대별 이용률</h2>
       <br>
       <img src="@/assets/egg3.png" class="egg2">
-      오픈 :&ensp;<span class = "coco">{{ open }}</span> %
+      오픈 (10:30~12:00) :&ensp;<span class = "coco">{{ open }}</span> %
       <span class="spacer"></span>
       <img src="@/assets/egg3.png" class="egg2">
-      미들 :&ensp;<span class = "coco">{{ middle }}</span> %
+      미들 (12:00~16:00) :&ensp;<span class = "coco">{{ middle }}</span> %
       <span class="spacer"></span>
       <img src="@/assets/egg3.png" class="egg2">
-      마감 :&ensp;<span class = "coco">{{ last }}</span> %
+      마감 (16:00~20:30) :&ensp;<span class = "coco">{{ last }}</span> %
       </div>
     </div>
   </main>
@@ -56,15 +61,15 @@ export default {
     return {
       currentTime: 'hh:mm:ss',
       tables: [
-        { id: 1, uses: 3 },
-        { id: 2, uses: 5 },
-        { id: 3, uses: 2 },
-        { id: 4, uses: 1 },
-        { id: 5, uses: 3 },
+        { id: 1, uses: 20 },
+        { id: 2, uses: 30 },
+        { id: 3, uses: 15 },
+        { id: 4, uses: 15 },
+        { id: 5, uses: 20 },
         { id: 6, uses: 0 }
       ],
       besttable: 2,
-      leasttable: 3,
+      leasttable: 6,
       meantime : 70,
       open : 50.0,
       middle : 30.0,
@@ -132,7 +137,7 @@ main {
 .middle1 {
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: 60px;
 }
 .info {
   margin: auto;
@@ -151,7 +156,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .table {
@@ -169,6 +174,27 @@ main {
   font-size: 17px;
   font-family: "Bold";
 }
+.middle3 {
+  display: inline-flex;
+}
+.arrow {
+  width: 11px;
+	height: 11px;
+  margin-left:-21pc;
+  margin-top: -15px;
+  margin-right: 5px;
+}
+h4 {
+  font-size: 11px;
+  font-family: "Light";
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+.arrow2 {
+  width: 35px;
+	height: 35px;
+  margin-top: 50px;
+}
 .bottom{
   margin-top: 30px;
   padding: 12px;
@@ -181,7 +207,7 @@ main {
 }
 .spacer {
   display: inline-block;
-  width: 90px;
+  width: 55px;
 }
 h1 {
   font-size: 20px;

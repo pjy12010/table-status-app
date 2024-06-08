@@ -14,10 +14,14 @@
       <div class = "info">
       <img src="@/assets/egg1.png" class="egg1">
       사용 가능 좌석 수 :&ensp;<span class = "coco">{{ availableSeats }}</span>&ensp;개</div>
-      <div class = "table"><img src="@/assets/egg1.png" class="egg1">
-      최장 체류 테이블 :&ensp;<span class = "coco">{{ tableNumber }}</span>&ensp;개
+      <!-- <div class = "table"><img src="@/assets/egg1.png" class="egg1">
+      최장 체류 테이블 :&ensp;<span class = "coco">{{ tableNumber }}</span>&ensp;번
       <span class="spacer"></span><img src="@/assets/egg1.png" class="egg1">
       평균 체류 시간 :&ensp;<span class = "coco">{{ tableTime }}</span>&ensp;분
+      </div> -->
+      <div class="bottom">
+        <img src="@/assets/arrow.png" class="arrow">
+        <h4>해당 값은 실시간 데이터를 반영한 것으로 오차가 있을 수 있습니다.</h4>
       </div>
     </div>
     <img src="@/assets/menu.png" alt="Menu" class="menu-image" />
@@ -117,7 +121,7 @@ main {
   height: auto;
   margin-left: 180px;
   margin-top: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 .egglogo-image {
   margin-top: 30px;
@@ -131,5 +135,21 @@ main {
   margin-top: -3px;
   margin-bottom: -4px;
   margin-right: 3px;
+}
+.bottom {
+  display: inline-flex;
+}
+.arrow {
+  width: 12px;
+	height: 12px;
+  margin-top: 30px;
+  margin-left: -5pc;
+  margin-right: 7px;
+}
+h4 {
+  font-size: 11px;
+  font-family: "Light";
+  margin-top: 31px;
+  margin-bottom: -40px;
 }
 </style>
